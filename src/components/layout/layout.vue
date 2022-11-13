@@ -24,13 +24,12 @@
                             <ul class="nav">
                                 <li><router-link to="/index">主页</router-link></li>
                                 <li><router-link to="/novel">小说</router-link></li>
-                                <li><router-link to="/novel">影视</router-link></li>
-                                <li><router-link to="/novel">音频</router-link></li>
+                                <li><router-link to="/movie">影视</router-link></li>
+                                <li><router-link to="/audio">音频</router-link></li>
                                 <li><router-link to="/novel">漫画</router-link></li>
                                 <li>
                                     <router-link to="/login">
                                         登录
-                                        <!-- <img src="../../../public/images/profile-header.jpg" alt=""> -->
                                         <img src="../../assets/img/logo.jpg" />
                                     </router-link>
                                 </li>
@@ -131,4 +130,6 @@ import { reactive,toRefs,ref } from 'vue'
 </script>
 
 <style lang="less" scoped>
+@import '../../../public/css/templatemo-cyborg-gaming.css';
+
 </style>

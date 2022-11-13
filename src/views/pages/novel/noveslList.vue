@@ -2,28 +2,13 @@
     <div class="row">
       <div class="col-lg-12">
         <div class="page-content">
-          <!-- ***** Banner Start ***** -->
-          <div class="main-banner">
-            <div class="row">
-              <div class="col-lg-7">
-                <div class="header-text">
-                  <h6>欢迎进入 小说模块</h6>
-                  <h4><em>浏览</em> 我们的热门内容</h4>
-                  <div class="main-button">
-                    <router-link to="/index">点我浏览</router-link>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <!-- 面包屑 -->
+          <div class="Nbreadcrumb" style="margin-top: 10px;margin-bottom: 0px;margin-left:20px;">
+            <el-breadcrumb :separator-icon="ArrowRight">
+            <el-breadcrumb-item :to="{ path: '/' }">返回首页</el-breadcrumb-item>
+            <el-breadcrumb-item>小说列表</el-breadcrumb-item>
+            </el-breadcrumb>
           </div>
-          <!-- ***** Banner End ***** -->
-              <!-- 面包屑 -->
-              <div class="Nbreadcrumb" style="margin-top: 20px;margin-bottom: 0px;margin-left:20px;">
-                <el-breadcrumb :separator-icon="ArrowRight">
-                <el-breadcrumb-item :to="{ path: '/' }">返回首页</el-breadcrumb-item>
-                <el-breadcrumb-item>小说列表</el-breadcrumb-item>
-                </el-breadcrumb>
-            </div>
           <!-- ***** Most Popular Start ***** -->
           <div class="most-popular" style="margin-top: 20px;">
             <div class="row">
@@ -39,7 +24,7 @@
                       <!-- 小说名 -->
                       <h6>{{item.novel_name}}</h6>
                       <!-- 类别名 -->
-                      <h6><i>{{item.category_name}}</i></h6>
+                      <h6><i>{{item.category_name}}</i> 作者：{{item.author_name}}</h6>
                     </div>
                   </div>
                       <!-- 分页 -->

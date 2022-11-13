@@ -21,7 +21,7 @@ export default {
       height: "450px", //播放器高度
       color: "#409eff", //主题色
       title: "", //视频名称
-      src: require('../../../../public/movies/1 (2).mp4'), //视频源 src: props.video_url
+      //src: require(''), //视频源 src: props.video_url
       muted: false, //静音
       webFullScreen: false,
       speedRate: ["0.75", "1.0", "1.25", "1.5", "2.0"], //播放倍速

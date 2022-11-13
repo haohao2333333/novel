@@ -10,13 +10,18 @@ const routes = [
         children:[
                 {
                   path:"/index",
-                  name: 'index',
+                  name: '主页',
                   component:()=> require('../views/pages/index.vue')
                 },
                 {
                   path:"/novel",
-                  name: 'novel',
+                  name: '小说模块',
                   component:()=> require('../views/pages/novel/noveslList.vue'),
+                },
+                {
+                  path:"/movie",
+                  name: '影视模块',
+                  component:()=> require('../views/pages/movie/movieList.vue'),
                 },
               ]
     },
@@ -26,7 +31,7 @@ const routes = [
       component:()=> require('../views/pages/novel/novel.vue'),
     },
     {
-      path:"/novel/:id/:chapter",
+      path:"/novel/:id/:chapterId",
       name: '小说内容',
       component:()=> require('../views/pages/novel/novelContent.vue'),
     },
@@ -39,16 +44,6 @@ const routes = [
       path:"/audios-content/:id",
       name: '音频内容',
       component:()=> require('../views/pages/audio/audioContent.vue')
-    },
-    {
-      path: '/login',
-      name: '登录界面', 
-      component:()=> require('../components/login/Login.vue'),
-    },
-    {
-      path: "/register",
-      name: "注册界面",
-      component: () => import('../components/login/Register.vue'),
     },
     {
       path: '/:pathMatch(.*)*',
